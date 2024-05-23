@@ -43,7 +43,7 @@ async function mainMenu() {
             updateEmployeeRole();
             break;
         case 'Exit':
-            db.pool.end();
+            await db.pool.end();
             process.exit();
     }
 }
